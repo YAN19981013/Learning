@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>组合选择器</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    div{
+        animation: v5 5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes v5{
+        from{
+            background-color: red
+        }
+        to{
+            background-color: yellow
+        }
+    }
+    @keyframes v5{
+        
+        0%{
+            background-color: red
+        }
+        25%{
+            background-color: black
+        }
+        50%{
+            background-color: blue
+        }
+        75%{
+            background-color: pink;
+        }
+        100%{
+            background-color: yellow;
+            width: 250px;
+            height: 250px;
+            margin-left:600px;
+            scroll-margin-inline-end:600px;
+        }
+    }
+.v1{
+    width: 500;
+    height:500;
+    border: 1px solid black;
+    z-index: 100;
+    /* display: none; */
+    /* overflow: scroll; */
+    animation-name: v2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
+
+}
+.v2{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    position:relative;
+    top: 100px;
+    /* visibility: hidden; */
+    
+}
+
+.v3{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position:static;
+    right: 100px;
+
+    
+}
+.v5{
+    width: 500;
+    height: 500;
+    border-radius: 50%;
+    animation-name: v5;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+p{
+    background-color: black
+}
+
+a:link{color: blue}
+a:visited{color: red}
+a:hover{color: blue}
+a:active{color: teal}
+</style>
+<body>
+    <button type="button" ondblclick="alert('欢迎')">click me !</button>
+    <br>
+    <a href="http://baidu.com" target="_blank">百度嗷</a>
+    <div class="v1">
+      <div class="v2">
+        <div class="v3">
+
+        </div>
+    </div>
+ </div>
+<div class="v5"></div>
+</body>
+<script>
+
+
+</script>
+
+
+
+
+</html>
